@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&family=Cabin:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+  text-rendering: optimizeSpeed;
+  overflow-y: overlay;
+  color: #000;
+}
+
+/*  Scrollbar CSS */
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+input,
+button,
+[tabindex] {
+  outline: none;
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slick-dots.slick-thumb li button {
+  background-color: #949494;
+  width: 18px;
+  height: 3px;
+  padding: unset;
+}
+.slick-dots.slick-thumb li button::before {
+  display: none;
+}
+.slick-dots.slick-thumb li.slick-active button {
+  background-color: #8bc34a;
+}
